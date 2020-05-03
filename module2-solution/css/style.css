@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.row {
+    width: 100%;
+    margin: 0 30px;
+}
+
+.color1-desktop, .color2-desktop, .color3-desktop {
+    background-color: honeydew;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+h2{
+    margin-top: 0;
+    float: right;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    
+ }
+#color1 h2{
+    background-color: rgb(141, 141, 199);
+    
+}
+
+#color2 h2{
+    background-color: rgb(245, 245, 153);
+    
+    
+}
+
+#color3 h2{
+    background-color: rgb(240, 185, 166);
+    
+}
+
+p{
+    width: 96%;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    padding: 20px;
+}
+
+@media (min-width: 992px) {
+    .color1-desktop, .color2-desktop, .color3-desktop {
+        width: 30.33%;
+        float: left;
+        border: 2px solid black;
+        margin-right: 3%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .color1-tablet, .color2-tablet {
+        width: 45%;
+        float: left;
+        border: 2px solid black;
+        margin-right: 3%;
+        margin-bottom: 30px;
+    }
+    .color3-tablet {
+        width: 93%;
+        float: left;
+        border: 2px solid black;
+        margin-right: 3%;
+    }
+}
+@media (max-width: 767px){
+    .color1-tablet, .color2-tablet, .color3-tablet {
+        width: 93%;
+        float: left;
+        border: 2px solid black;
+        margin-bottom: 30px;
+        margin-right: 3.5%;
+    }
+}
